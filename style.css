@@ -197,54 +197,25 @@ button {
 /* query */
 @media only screen and (max-width: 778px) {
   .calculator-app__img {
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
 
   .calculator-app__calculate {
-    width: 40rem;
+    width: 100vw;
+    padding: 0;
     margin: auto;
-    max-width: 85%;
     grid-template-columns: 1fr;
   }
 
   .calculator-billbox {
-    /* margin: 0 auto; */
-    width: 30rem;
+    padding: 1rem;
+  }
+
+  .calculator-app__tipbox {
+    padding: 1rem;
   }
 
   .error {
     margin-left: 20rem;
-  }
-}
-
-@media only screen and (max-width: 499px) {
-  .app-tips ul {
-    gap: 1rem;
-  }
-
-  .calculator-billbox {
-    width: 28rem;
-  }
-
-  /* .bill,
-  .person {
-    padding-left: 30%;
-  } */
-
-  .calculate-app__calculate {
-    /* width: 35rem; */
-  }
-
-  .calculator-app__tipbox {
-    width: 28rem;
-    margin: auto;
-  }
-
-  /* .calculate-app__calculate; */
-}
-
-@media only screen and (max-width: 424px) {
-  .calculate-app__calculate {
-    /* width: 35rem; */
   }
 }
