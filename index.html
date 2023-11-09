@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="calculator-app">
+      <!-- calculator-app__img -->
+      <div class="calculator-app__img">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+
+      <!-- calculation-section -->
+      <div class="calculator-app__calculate">
+        <div class="calculator-billbox">
+          <form action="">
+            <label for="billing">Bill</label>
+            <input
+              class="bill"
+              id="billing"
+              oninput="displayInput()"
+              type="text"
+              placeholder="0" />
+            <span>
+              <img src="./images/icon-dollar.svg" alt="icon-dollar" />
+            </span>
+          </form>
+
+          <div class="calculator-app__tips">
+            <p>Select Tip %</p>
+            <ul>
+              <li class="li-1">5%</li>
+              <li class="li-2">10%</li>
+              <li class="li-3">15%</li>
+              <li class="li-4">25%</li>
+              <li class="li-5">50%</li>
+              <input
+                class="custom"
+                type="text"
+                name=""
+                id=" "
+                placeholder="Custom" />
+            </ul>
+          </div>
+
+          <span class="error">Can't be zero</span>
+          <form action="">
+            <label for="billing">Number of People</label>
+            <input
+              class="person"
+              id="billed"
+              oninput="display()"
+              type="text"
+              placeholder="0" />
+            <span>
+              <img src="./images/icon-person.svg" alt="icon-dollar" />
+            </span>
+          </form>
+        </div>
+
+        <!-- display section -->
+        <div class="calculator-app__tipbox">
+          <div class="calculator-app__tipbox-green">
+            <div class="calculate-app__calculate">
+              <div class="calculator-app__calculated per__person">
+                <div class="calculator-app__tipped">
+                  <p class="head">Tip Amount</p>
+                  <span class="tail">/person</span>
+                </div>
+                <div class="calculator-app__figures per">$0.00</div>
+              </div>
+
+              <div class="calculator-app__calculated total">
+                <div class="calculator-app__tipped">
+                  <p class="head">Total</p>
+                  <span class="tail">/person</span>
+                </div>
+                <div class="calculator-app__figures total__value">$0.00</div>
+              </div>
+            </div>
+            <button class="btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <input type="text" id="textInput" oninput="displayInput()" />
+    <div id="displayDiv"></div> -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/tomiwamajor">Adelekun Adetomiwa</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
