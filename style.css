@@ -216,4 +216,8 @@ button {
   .app-tips ul {
     gap: 1rem;
   }
+
+  .calculate-app__calculate {
+    width: 35rem;
+  }
 }
