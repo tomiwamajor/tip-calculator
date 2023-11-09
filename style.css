@@ -207,6 +207,10 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .calculator-billbox {
+    width: 32rem;
+  }
+
   .error {
     margin-left: 20rem;
   }
@@ -217,7 +221,16 @@ button {
     gap: 1rem;
   }
 
+  .calculator-billbox {
+    width: 30rem;
+  }
+
+  /* .bill,
+  .person {
+    padding-left: 30%;
+  } */
+
   .calculate-app__calculate {
-    width: 35rem;
+    /* width: 35rem; */
   }
 }
