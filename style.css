@@ -201,7 +201,7 @@ button {
   }
 
   .calculator-app__calculate {
-    width: 38rem;
+    width: 40rem;
     margin: 0 auto;
     max-width: 90%;
     grid-template-columns: 1fr;
@@ -209,7 +209,7 @@ button {
 
   .calculator-billbox {
     /* margin: 0 auto; */
-    width: 32rem;
+    width: 30rem;
   }
 
   .error {
@@ -223,7 +223,7 @@ button {
   }
 
   .calculator-billbox {
-    width: 28rem;
+    /* width: 28rem; */
   }
 
   /* .bill,
