@@ -208,7 +208,7 @@ button {
   }
 
   .calculator-billbox {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 32rem;
   }
 
