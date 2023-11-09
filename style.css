@@ -202,8 +202,8 @@ button {
 
   .calculator-app__calculate {
     width: 40rem;
-    margin: 0 auto;
-    max-width: 90%;
+    margin: auto;
+    max-width: 85%;
     grid-template-columns: 1fr;
   }
 
@@ -223,7 +223,7 @@ button {
   }
 
   .calculator-billbox {
-    /* width: 28rem; */
+    width: 28rem;
   }
 
   /* .bill,
@@ -231,6 +231,19 @@ button {
     padding-left: 30%;
   } */
 
+  .calculate-app__calculate {
+    /* width: 35rem; */
+  }
+
+  .calculator-app__tipbox {
+    width: 28rem;
+    margin: auto;
+  }
+
+  /* .calculate-app__calculate; */
+}
+
+@media only screen and (max-width: 424px) {
   .calculate-app__calculate {
     /* width: 35rem; */
   }

@@ -78,3 +78,11 @@ listBtn5.addEventListener("click", () => {
   totalTip = save.push(parseInt(bill.value) * 0.5);
   totalValue.textContent = `$${billAmount}.00`;
 });
+
+reset.addEventListener("click", function (e) {
+  e.preventDefault();
+  perPersonValue.innerText = `$${0}.00`;
+  totalValue.innerText = `$${0}.00`;
+  bill.value = "";
+  personsNum.value = "";
+});
