@@ -32,7 +32,7 @@ function display() {
 
   if (listBtn1 && totalPerson > 0) {
     const one = parseInt(save[1]) * 1;
-    totalValue.innerText = `$${Math.abs(billAmount / one)}`;
+    totalValue.innerText = `$${Math.trunc(billAmount / one)}`;
   } else {
     document.querySelector(".error").style.display = "block";
   }
