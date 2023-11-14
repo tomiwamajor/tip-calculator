@@ -32,7 +32,7 @@ function display() {
 
   if (listBtn1 && totalPerson > 0) {
     const one = parseInt(save[1]) * 1;
-    totalValue.innerText = `$${Math.trunc(billAmount / one)}`;
+    totalValue.innerText = `$${(billAmount / one).toFixed(2)}`;
   } else {
     document.querySelector(".error").style.display = "block";
   }
@@ -41,42 +41,42 @@ function display() {
 //tips
 listBtn1.addEventListener("click", () => {
   billAmount = parseInt(bill.value) * 0.05;
-  perPersonValue.textContent = `$${billAmount}`;
+  perPersonValue.textContent = `$${billAmount.toFixed(2)}`;
 
   totalTip = save.push(parseInt(bill.value) * 0.05);
-  totalValue.textContent = `$${billAmount}`;
+  totalValue.textContent = `$${billAmount.toFixed(2)}`;
 });
 
 listBtn2.addEventListener("click", () => {
   billAmount = parseInt(bill.value) * 0.1;
-  perPersonValue.textContent = `$${billAmount}.00`;
+  perPersonValue.textContent = `$${billAmount.toFixed(2)}`;
 
   totalTip = save.push(parseInt(bill.value) * 0.1);
-  totalValue.textContent = `$${billAmount}.00`;
+  totalValue.textContent = `$${billAmount.toFixed(2)}`;
 });
 
 listBtn3.addEventListener("click", () => {
   billAmount = parseInt(bill.value) * 0.15;
-  perPersonValue.textContent = `$${billAmount}.00`;
+  perPersonValue.textContent = `$${billAmount.toFixed(2)}`;
 
   totalTip = save.push(parseInt(bill.value) * 0.15);
-  totalValue.textContent = `$${billAmount}.00`;
+  totalValue.textContent = `$${billAmount.toFixed(2)}`;
 });
 
 listBtn4.addEventListener("click", () => {
   billAmount = parseInt(bill.value) * 0.25;
-  perPersonValue.textContent = `$${billAmount}.00`;
+  perPersonValue.textContent = `$${billAmount.toFixed(2)}`;
 
   totalTip = save.push(parseInt(bill.value) * 0.25);
-  totalValue.textContent = `$${billAmount}.00`;
+  totalValue.textContent = `$${billAmount.toFixed(2)}`;
 });
 
 listBtn5.addEventListener("click", () => {
   billAmount = parseInt(bill.value) * 0.5;
-  perPersonValue.textContent = `$${billAmount}.00`;
+  perPersonValue.textContent = `$${billAmount.toFixed(2)}`;
 
   totalTip = save.push(parseInt(bill.value) * 0.5);
-  totalValue.textContent = `$${billAmount}.00`;
+  totalValue.textContent = `$${billAmount.toFixed(2)}`;
 });
 
 reset.addEventListener("click", function (e) {
